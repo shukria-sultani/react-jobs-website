@@ -1,5 +1,68 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Arima", system-ui;;
+}
+.navbar-collapse .active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* Position below the link */
+    width: 100%;
+    height: 3px; /* Height of the underline */
+    background-color: #a0d2eb; /* Ice Cold */
+    transform: scaleX(1); /* Show the underline */
+    transition: transform 0.3s ease; /* Transition for the underline */
+}
+.nav-link {
+    color: #8458B3; /* Purple Pain */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative; /* Position for the pseudo-element */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Position below the link */
+    width: 100%;
+    height: 3px; /* Height of the underline */
+    background-color: #a0d2eb; /* Ice Cold */
+    transform: scaleX(0); /* Start with no width */
+    transition: transform 0.3s ease; /* Transition for the underline */
+}
+
+.nav-link:hover {
+    color: #d0bdf4; /* Medium Purple on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1); /* Expand underline on hover */
+}
+
+.card{
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card:hover{
+    box-shadow: 0 8px 20px #d5b6f6; /* Shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+    border: none;
+}
+.card button{
+    background-color: #8458B3; /* Purple Pain */
+    color: #FFFFFF; /* White text */
+    border: none;
+    width: 150px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.card button:hover {
+    background-color: #a0d2eb; /* Ice Cold */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 15px #d5b6f6; /* Add shadow for depth */
+ 
 }
