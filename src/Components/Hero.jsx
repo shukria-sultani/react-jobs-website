@@ -7,7 +7,7 @@ export default function Hero({
   return (
     <section className="bg-dark text-light p-5 text-center ">
       <div className="container p-5">
-        <h1>{title}</h1>
+        <h1 style={{color: "#8458B3"}}>{title}</h1>
         <p className="lead">{subtitle}</p>
       </div>
     </section>
