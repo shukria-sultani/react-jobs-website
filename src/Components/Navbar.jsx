@@ -22,7 +22,7 @@ export default function Navbar() {
           <ul className="navbar-nav ms-auto mt-2">
             <li className="nav-item">
               <a
-                className="nav-link active text-light bg-primary"
+                className="nav-link active text-light"
                 aria-current="page"
                 href="#"
               >
