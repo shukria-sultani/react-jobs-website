@@ -5,10 +5,10 @@ export default function Hero({
   subtitle = "Find the React jobs that fits your skils sets",
 }) {
   return (
-    <section className="bg-dark text-light p-5 text-center ">
+    <section className=" text-light p-5 text-center " style={{backgroundColor: "#d0ebf9"}}>
       <div className="container p-5">
         <h1 style={{color: "#8458B3"}}>{title}</h1>
-        <p className="lead">{subtitle}</p>
+        <p className="lead" style={{color: "#8458B3"}}>{subtitle}</p>
       </div>
     </section>
   );
