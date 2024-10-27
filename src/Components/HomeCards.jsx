@@ -18,9 +18,9 @@ export default function HomeCards() {
                  </Card>
 
                  <Card style={style2}>    
-               <h4 className='fw-bold ' >For Devlopers</h4> 
-                 <p className='lead'>Browse our React jobs and start your career today</p>
-                 <button className="bg-dark text-light p-2 rounded-3 "><a href="#" className='text-light text-decoration-none'> Browse Jobs</a></button>
+               <h4 className='fw-bold ' >For Employers</h4> 
+                 <p className='lead'>List your job to find the prefect devloper for the role.</p>
+                 <button className="bg-dark text-light p-2 rounded-3 "><a href="#" className='text-light text-decoration-none'> Add job</a></button>
                  </Card> 
 
                 
