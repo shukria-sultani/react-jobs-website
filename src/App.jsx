@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import HomeCards from "./Components/HomeCards"
+import JobsListing from './Components/JobsListing'
 function App() {
     
         
@@ -10,6 +11,7 @@ function App() {
        <Navbar></Navbar>
        <Hero></Hero>
        <HomeCards></HomeCards>
+       <JobsListing></JobsListing>
     </>
   )
 }
