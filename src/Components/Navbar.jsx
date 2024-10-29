@@ -1,16 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
 export default function Navbar() {
-   
-  const [isActive, setActive] = useState()
- 
+  const activeLink = ({ isActive }) =>
+    isActive ? 'nav-link active text-light' : 'nav-link text-light';
+
   return (
-    <nav className="navbar navbar-expand-lg  navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <Link className="navbar-brand text-light fw-bold" style={{ fontSize: '2rem' }} to="/">
+        <NavLink className="navbar-brand text-light fw-bold" style={{ fontSize: '2rem' }} to="/">
           React Jobs
-        </Link>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -25,29 +25,23 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto mt-2">
             <li className="nav-item">
-              <Link
-                className="nav-link active text-light"
-                aria-current="page"
-                to="/"
-              >
+              <NavLink className={activeLink} aria-current="page" to="/">
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link  text-light" to="/jobs">
+              <NavLink className={activeLink} to="/jobs"> 
                 Jobs
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-light" to="/add-job">
+              <NavLink className={activeLink} to="/add-job">
                 Add Job
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
       </div>
-
     </nav>
-
   );
 }
