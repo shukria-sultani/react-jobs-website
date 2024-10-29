@@ -51,19 +51,17 @@
     transform: translateY(-5px); /* Slight lift effect */
     border: none;
 }
-.card button{
-    background-color: #8458B3; /* Purple Pain */
-    color: #FFFFFF; /* White text */
+.card .home-card-button{
+    color: #FFFFFF; 
     border: none;
     width: 150px;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
 }
-.card button:hover {
-    background-color: #a0d2eb; /* Ice Cold */
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 4px 15px #d5b6f6; /* Add shadow for depth */
+.card .home-card-button:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px #d5b6f6; 
  
 }
 .card small{
@@ -73,4 +71,16 @@
 .salary{
     color: #8458B3;
     font-weight: 900;
+}
+.view-jobs{
+    color: #FFFFFF; 
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.view-jobs:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px #d5b6f6; 
+ 
 }
