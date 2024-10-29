@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import {FaMapMarker} from "react-icons/fa"
+import { Link } from 'react-router-dom';
 export default function ListJob({job}) {
     const [showFullDescription, setShowFullDescription] = useState(false);
     let description = job.description;
@@ -23,7 +24,7 @@ export default function ListJob({job}) {
             <div className='d-flex flex-lg-row'>
                 <FaMapMarker className='d-inline me-2 text-danger'></FaMapMarker>
               <span style={{color:'#63beeb', fontWeight: '900'}}>{job.location}</span>
-              <a href="#" className='bg-dark p-2 text-light text-center rounded-2 text-decoration-none ms-auto'>Read More</a>
+              <Link to="/jobs" className='bg-dark p-2 text-light text-center rounded-2 text-decoration-none ms-auto'>Read More</Link>
             </div>
           </div>
   )

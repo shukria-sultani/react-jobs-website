@@ -1,12 +1,16 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import { useState } from "react";
 export default function Navbar() {
+   
+  const [isActive, setActive] = useState()
+ 
   return (
     <nav className="navbar navbar-expand-lg  navbar-dark bg-dark">
       <div className="container">
-        <a className="navbar-brand text-light fw-bold" style={{ fontSize: '2rem' }} href="#">
+        <Link className="navbar-brand text-light fw-bold" style={{ fontSize: '2rem' }} to="/">
           React Jobs
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,23 +25,23 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto mt-2">
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link active text-light"
                 aria-current="page"
-                href="#"
+                to="/"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link  text-light" href="#">
+              <Link className="nav-link  text-light" to="/jobs">
                 Jobs
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href="#">
+              <Link className="nav-link text-light" to="/add-job">
                 Add Job
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
