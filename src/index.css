@@ -84,3 +84,15 @@
     box-shadow: 0 4px 15px #d5b6f6; 
  
 }
+.go-back{
+    color: #FFFFFF; 
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    background-color: black;
+}
+.go-back:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px #d5b6f6; 
+}

@@ -7,13 +7,14 @@ import {Route,
     createBrowserRouter, 
     createRoutesFromElements,
     RouterProvider} from "react-router-dom"
+import NotFoundPage from './Pages/NotFoundPage'
 
   const router  = createBrowserRouter(
     createRoutesFromElements(
     <Route path='/' element ={<MainLayout />}>
        <Route index element= {<HomePage />}/>
        <Route path ="/jobs" element= {<JobsPage />}/>
-
+       <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
     </Route>
   )
   )
@@ -23,11 +24,6 @@ function App() {
         
   return (
     <>
-       {/* <Navbar></Navbar>
-       <Hero></Hero>
-       <HomeCards></HomeCards>
-       <JobsListing></JobsListing>
-       <ViewAllJobs></ViewAllJobs> */}
 
         <RouterProvider router = {router}/>
     </>
