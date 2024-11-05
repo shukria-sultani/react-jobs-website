@@ -24,7 +24,7 @@ export default function ListJob({job}) {
             <div className='d-flex flex-lg-row'>
                 <FaMapMarker className='d-inline me-2 text-danger'></FaMapMarker>
               <span style={{color:'#63beeb', fontWeight: '900'}}>{job.location}</span>
-              <Link to="/jobs" className='bg-dark p-2 text-light text-center rounded-2 text-decoration-none ms-auto'>Read More</Link>
+              <Link to={`/jobs/${job.id}`} className='bg-dark p-2 text-light text-center rounded-2 text-decoration-none ms-auto'>Read More</Link>
             </div>
           </div>
   )
