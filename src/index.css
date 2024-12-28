@@ -101,3 +101,48 @@
     text-decoration: none;
     text-align: center;
 }
+.form-container{
+
+    justify-content: center;
+}
+.form-container  input{
+    padding: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px #cde6f3;
+    outline: none;
+ 
+}
+.form-container  textarea{
+  height: 120px;
+  outline: none;
+  border: none;
+  box-shadow: 2px 2px 4px 4px #cde6f3;
+  padding: 10px;
+  resize: none ;
+}  
+.form-container label{
+    color: #8458B3;
+    font-weight: bold;
+}
+.form-container select{
+    box-shadow: 2px 2px 2px 2px #cde6f3;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+.form-container button{
+    color: #FFFFFF; 
+    background-color: #8458B3;
+    border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+   padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.form-container button:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px #d5b6f6; 
+ 
+}
