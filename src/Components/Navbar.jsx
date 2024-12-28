@@ -35,7 +35,7 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className={activeLink} to="/add-job">
+              <NavLink className={activeLink} to="/addjob">
                 Add Job
               </NavLink>
             </li>
