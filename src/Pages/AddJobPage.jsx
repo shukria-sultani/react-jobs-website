@@ -57,8 +57,8 @@ function AddJobPage({addJobSubmit}) {
           onChange={(e) => setType(e.target.value)}
         >
           <option value="">Select</option>
-          <option value="fullTime">Full Time</option>
-          <option value="partTime">Part Time</option>
+          <option value="Full-Time">Full-Time</option>
+          <option value="Part-Time">Part-Time</option>
         </select>
         
         <label htmlFor="title">Position Title: </label>
