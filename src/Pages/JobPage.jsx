@@ -54,7 +54,7 @@ function JobPage({deleteJob}) {
 
                     <div className="container d-flex flex-column bg-light p-4">
                         <h6 className='fw-bolder'>Manage Jobs</h6>
-                        <Link className= "edit p-2 rounded-5 text-light" to={`/jobs/edit/${job.id}`} >Edit Job</Link>
+                        <Link className= "edit p-2 rounded-5 text-light" to={`/edit-job/${job.id}`} >Edit Job</Link>
                         <button className='p-2 rounded-5 mt-2 text-light border-0 bg-danger' onClick={()=> onDeleteClick(job.id)}>Delete Job</button>
                     </div>
                 </div>
