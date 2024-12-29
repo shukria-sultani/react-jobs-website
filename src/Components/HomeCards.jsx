@@ -21,7 +21,7 @@ export default function HomeCards() {
                  <Card style={style2}>    
                <h4 className='fw-bold ' >For Employers</h4> 
                  <p className='lead'>List your job to find the prefect devloper for the role.</p>
-                 <button className="bg-dark home-card-button text-light p-2 rounded-3 "><Link to="/add-job" className='text-light text-decoration-none'> Add job</Link></button>
+                 <button className="bg-dark home-card-button text-light p-2 rounded-3 "><Link to="/addjob" className='text-light text-decoration-none'> Add job</Link></button>
                  </Card> 
 
                 

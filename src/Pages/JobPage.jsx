@@ -3,12 +3,24 @@ import { useParams, useLoaderData } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { FaMapMarker } from 'react-icons/fa';
-function JobPage() {
+import { useNavigate } from 'react-router-dom';
+function JobPage({deleteJob}) {
     const id = useParams();
+    const navigate = useNavigate()
     const job = useLoaderData();
+    const onDeleteClick = (jobId)=>{
+ 
+       const confirm = window.confirm("Are you sure you want to delete this job?")
+        
+       if(!confirm) return
+
+       deleteJob(jobId)
+       navigate("/jobs")
+
+    }
   return (
     <>
-    <div className="container jobs-container main-container p-3">
+    <div className="container  main-container p-3">
                <FaArrowLeft className='me-2 ' /> <Link to="/jobs"  className='text-decoration-none fw-bolder' style={{color: "#8458B3"}}>Go Back to Job Listing</Link>
             </div>
 
@@ -41,7 +53,7 @@ function JobPage() {
                     <div className="container d-flex flex-column bg-light p-4">
                         <h6 className='fw-bolder'>Manage Jobs</h6>
                         <Link className= "edit p-2 rounded-5 text-light" to={`/jobs/edit/${job.id}`} >Edit Job</Link>
-                        <button className='p-2 rounded-5 mt-2 text-light border-0 bg-danger'>Delete Job</button>
+                        <button className='p-2 rounded-5 mt-2 text-light border-0 bg-danger' onClick={()=> onDeleteClick(job.id)}>Delete Job</button>
                     </div>
                 </div>
 
@@ -50,6 +62,7 @@ function JobPage() {
     </>
   )
 }
+
 
 const jobLoader = async ({params}) =>{
      const res = await fetch(`/api/jobs/${params.id}`)
