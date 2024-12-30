@@ -40,9 +40,10 @@ Install the dependencies:
 
 npm install
 
-Start the JSON server (if you are using it locally):
-json-server --watch src/jobs.json --port 8000
+- Start the JSON server (if you are using it locally):
+- npm run server
+- json-server --watch src/jobs.json --port 8000
 
 Start the React application:
-npm run dev
-Open your browser and navigate to http://localhost:3000 to view the applicat
+- npm run dev
+- Open your browser and navigate to http://localhost:3000 to view the applicat
