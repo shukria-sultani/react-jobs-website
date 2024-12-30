@@ -16,6 +16,18 @@ A simple job portal built with React that allows users to view, add, edit, and d
 - **CSS**: For styling the application.
 - **Bootstrap**: For styling the application and making it responsive.
 
+## Screenshots
+
+- **Home Page**:  
+  ![Home Page](https://raw.githubusercontent.com/shukria-sultani/react-jobs-website/7b9d1f2af15e235e447e2f9d834ea6a25867cbf7/home.png)
+
+- **Jobs Page**:  
+  ![Jobs Page](https://raw.githubusercontent.com/shukria-sultani/react-jobs-website/7b9d1f2af15e235e447e2f9d834ea6a25867cbf7/jobs.png)
+
+- **Add Job Page**:  
+  ![Add Job Page](https://raw.githubusercontent.com/shukria-sultani/react-jobs-website/7b9d1f2af15e235e447e2f9d834ea6a25867cbf7/addjob.png)
+
+
 ## Installation
 
 1. Clone the repository:
